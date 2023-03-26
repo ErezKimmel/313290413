@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Saba Mike</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to Saba Mike's website</h1>
+	</header>
+
+    <nav class="sticky-nav">
+        <div class="logo">
+            <a href="MyWebsite.html"><img src="MK.png"></a>
+        </div>
+        <ul>
+            <!-- <li class="home"><a href="MyWebsite.html">Home</a></li> -->
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-photos">My Photos</a></li>
+            <li><a href="#my-playlist">My Playlist</a></li>
+            <li><a href="#like">Like</a></li>
+            <li><a href="#qr-code">QR Code</a></li>
+            <li><a href="#q-a">Q&A</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+    </nav>
+    
+
+	<main>
+	                <!-- About Me -->
+
+		<h2 id="about-me">About Me</h2>
+		<p id = "text">
+            Michael Kitay, my grandfather, was born in Czychew, Poland on February 20, 1926. According to his many stories, he had a wonderful
+
+            childhood growing up with family, friends and many farm animals.<br>
+
+            When World War II broke out in September 1939, all Jewish family life changed for the worse. A new reality reached the small town of
+
+            Czychew. Most of the neighborhood fled for their lives and Michael found himself, along with his older sister, hiding in the woods.<br>
+
+            Survival was the new name of the game. Winters were extremely cold, searching for food fed to farm animals and hiding from the enemy
+
+            was almost impossible. Most important for Michael, was to stay alive and take care of his sister.
+
+            Once the war ended, my grandfather started a new chapter in his life in the United States of America.
+
+            He was drafted to the U.S. Army and served for two years. Later, he became a locksmith in New York City where he resided for over 60 years
+
+            together with his Israeli wife and three children.<br>
+
+            <b>My grandfather enjoyed life, never forgetting his roots and his past. He lived a wonderful life that he spent between New York,
+
+            Florida and Israel. He was also a true familyman and is missed by all of us.</b>
+        </p>
+		                <!-- My Photos -->
+
+        <div class="head">
+            <h2 class = "Gallery" id="my-photos">My Photo Gallery</h2>
+        </div>
+        
+        <div class="container">
+            <input type="radio" name="Photos" id="check1" checked> 
+            <input type="radio" name="Photos" id="check2">
+            <input type="radio" name="Photos" id="check3">
+            <div class="top_comment">
+              <label for="check1"> All Photos</label>
+              <label for="check2"> Family Photos </label>
+              <label for="check3"> Me</label>
+            </div>
+            <div class="full-img" id="fullImgBox">
+              <img src = "family1.jpg" id="fullImg">
+              <span onclick="closeFullImg()">X</span>
+            </div>
+            <div class="photo_gallery">
+                <img src="family1.jpg" onclick="openFullImg(this.src)">
+                <img src="family2.jpg" onclick="openFullImg(this.src)">
+                <img src="family3.jpg" onclick="openFullImg(this.src)">
+                <img src="family4.jpg" onclick="openFullImg(this.src)">
+                <img src="family5.jpg" onclick="openFullImg(this.src)">
+                <img src="family6.jpg" onclick="openFullImg(this.src)">
+                <img src="family7.jpg" onclick="openFullImg(this.src)">
+                <img src="family8.jpg" onclick="openFullImg(this.src)">
+                <img src="family9.jpg" onclick="openFullImg(this.src)">
+                <img src="family10.jpg" onclick="openFullImg(this.src)">
+                <img src="family11.jpg" onclick="openFullImg(this.src)">
+                <img src="family12.jpg" onclick="openFullImg(this.src)">
+              </div>
+            <script src="myScript.js"></script>
+          </div>
+          
+		
+                        <!-- My Playlist -->
+
+		<h2 id="my-playlist">My Playlist</h2>
+        <div class="video-grid">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/80od8TLZzDw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/aNkLTAd68KY" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/PPlDAJgAQsQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWWc7vBnSP0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+		
+                          <!-- Like -->
+
+		<h2 id="like">Like</h2>
+        <div class="fb-like" data-href="MyWebsite.html" data-layout="button" data-action="like" data-size="small" data-share="false"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="erez123456"></script>
+
+                        <!-- QR Code -->
+
+		<h2 id="qr-code">QR Code</h2>
+		<p>Write your content here.</p>
+		
+
+                        <!-- Q&A -->
+
+		<h2 id="q-a">Q&A</h2>
+		<p>Write your content here.</p>
+
+
+                        <!-- Contact me -->
+
+        <h2 id="contact-me">Contact Me</h2>
+
+        <form id="my-form" action="mailto:erekim@post.bgu.ac.il?subject=E-mail from Website&body=" method="POST" enctype="text/plain">
+        <!-- <form id="my-form" action="mailto:roihas@post.bgu.ac.il?subject=From%20contact%20form&body=" method="POST" enctype="text/plain"> -->
+            <input type="text" id="name" placeholder="Your Name" required autocomplete="off">
+            <input type="email" id="email" placeholder="Your E-mail Address" required autocomplete="off">           
+            <textarea id="Message" name="Message" rows="4" placeholder="Your Message"></textarea>
+            <div id="emoji-container">
+                <span class="emoji" role="button" aria-label="smiley face">&#x1F600;</span>
+                <span class="emoji" role="button" aria-label="heart">&#x2764;&#xFE0F;</span>
+                <span class="emoji" role="button" aria-label="thumbs up">&#x1F44D;</span>
+                <span class="emoji" role="button" aria-label="fire">&#x1F525;</span>
+                <span class="emoji" role="button" aria-label="thinking face">&#x1F914;</span>
+                <span class="emoji" role="button" aria-label="clapping hands">&#x1F44F;</span>
+              </div>   
+            <button type="submit">Send</button>
+            
+        </form>
+
+        <script>
+            const messageTextarea = document.getElementById('Message');
+            const emojiContainer = document.getElementById('emoji-container');
+            const emojis = emojiContainer.querySelectorAll('.emoji');
+          
+            emojis.forEach((emoji) => {
+              emoji.addEventListener('click', () => {
+                messageTextarea.value += emoji.innerHTML;
+              });
+            });
+          </script>
+          
+	</main>
+
+	<footer>
+		<p>Copyright © Saba Mike 2023</p>
+	</footer>
+</body>
+</html>
