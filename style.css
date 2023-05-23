@@ -39,6 +39,9 @@ color: #333;
 padding: 5px;
 background-color: #ccc;
 }
+nav a:hover{
+    text-decoration: underline;
+  }
 
 .logo img {
 max-height: 100%;
@@ -62,13 +65,17 @@ main {
 	margin: 20px;
 }
 
+.about-text{
+    text-align: left;
+    font-size: 25px;}
+
 footer {
 	background-color: #333;
 	color: #fff;
 	text-align: center;
 	padding: 10px;
 }
-/* Make the navigation menu stick to the top of the screen */
+
 .sticky-nav {
     position: sticky;
     top: 0;
@@ -81,7 +88,7 @@ body{
 
 .photo_gallery{
     width: 90%;
-    margin: 100px auto 50px;
+    /* margin: 100px auto 50px; */
     align-items: center;
     justify-content: center;
     display: grid;
@@ -113,7 +120,7 @@ body{
 }
 .full-img img{
     width: 150%;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .full-img span{
@@ -133,8 +140,9 @@ body{
 
 
 .Gallery{
+    text-align: center;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 75px;
 }
 
 /* input{
@@ -143,12 +151,13 @@ body{
 
 .Gallery::before{
     content: '';
+    text-align: center;
     position: absolute;
     width: 100px;
     height: 3px;
     background-color: crimson;
     /* bottom:auto; */
-    left: 10%;
+    left: 50%;
     transform: translateX(-50%);
     animation: animate 4s linear infinite;
 }
@@ -189,10 +198,54 @@ body{
     left: 0;
   }
 
-/* other things here */
+/* Like */
+/* #like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+  } */
+  .fb-like {
+    display: flex;
+    justify-content: center;
+    margin-left: 45%;
+  }
+  
+
+/* QR Code */
+.QR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.QR img {
+    width: 30%;
+    border: 1px solid black;
+    transition: transform 0.2s ease-in-out;
+  }
+  .QR img:hover {
+    transform: scale(1.1);
+    /* border-radius: 20px; */
+    box-shadow: 10px 32px 30px rgba(68,77,136,0.2);
+  }
+  
 
 
-        /* contact me */
+/* Q&A */
+.question{
+    text-align: center;
+    font-size: 30px;
+}
+
+.question li {
+    font-size: 25px;
+}
+.ans2 {
+    font-size: 25px;
+}
+
+/* contact me */
 
 form{
     margin: auto;
